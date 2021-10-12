@@ -32,11 +32,23 @@ fun questionTwo(){
     when (userChoise) {
         "low" -> if (lowNumber.contains(dicenumber)) {
             println("You won challenge 2")
+            questionTree()
         } else {println("Game over")}
         "high"-> if (highNumber.contains(dicenumber)) {
             println("you won challenge 2")
+            questionTree()
         } else {println("Game over")}
 
         }
     }
+
+fun questionTree(){
+    println("There is a dragon in the way!! Choose the right weapon to kill him. ")
+    println("1: Sword, 2: Magic meat, 3: Arrow, 4: Metal cord ")
+    val userWeapon = readLine().toString()
+    if (userWeapon.contains("2" ))
+    {println("You defeated the dragon. You are going to challenge 4") }
+    else {println("You are dead! GAME OVER")}
+}
+
 
